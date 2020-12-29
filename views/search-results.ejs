@@ -1,5 +1,5 @@
 <main class="grid gapTwoRem">
-  <h2>Results for <span class="firstCap"><%= artist %></span></h2>
+  <h2>Results for <span class="firstCap">"<%= artist %>"</span></h2>
 
   <article class="grid gapTwoRem gridResponsive">
     <% for (i=0; i < discogs.length; i++) { %>
@@ -20,7 +20,7 @@
         <input hidden type="text" name="album_title" value="<%= discogs[i].title %>">
         <input hidden type="text" name="masterId" value="<%= discogs[i].id %>">
         <input hidden type="text" name="artwork" value="<%= discogs[i].cover_image %>">
-        <button class="btn btn-light" type="submit">&#9734 Favorite &#9734</button>
+        <button class="btn btn-light" type="submit"> Favorite </button>
       </form>
     </section>
     <% } %>

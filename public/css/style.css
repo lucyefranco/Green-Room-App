@@ -20,7 +20,7 @@ html {
   --mainColor: var(--darkColor);
 
   /* background colors */
-  --lightBg: #ffffff;
+  --lightBg: #537462;
   --darkBg: #121212;
   /* primary background color */
   --mainBg: var(--lightBg);
