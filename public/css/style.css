@@ -242,3 +242,11 @@ header {
 footer {
   font-size: 10px;
 }
+
+.headerButtons {
+  background-color: #193c0d;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5vw;
+}
