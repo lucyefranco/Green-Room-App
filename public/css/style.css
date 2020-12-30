@@ -25,7 +25,7 @@ html {
   /* primary background color */
   --mainBg: var(--lightBg);
 
-  --bodyTxt: 'Noto Sans', 'Roboto', sans-serif;
+  --bodyTxt:  'Roboto', sans-serif;
   --displayTxt: 'Permanent Marker', sans-serif;
 
 }
@@ -60,6 +60,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--bodyTxt);
+}
+
+h5 {
+  margin-left: 1rem;
 }
 
 img {
@@ -167,4 +171,74 @@ nav ul:nth-child(n+2) {
 
 .btn {
   margin: 1rem;
+}
+
+.headerTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header {
+  height: 18vh;
+}
+
+/* INDEX PAGE */
+
+.index {
+  display: flex;
+  align-items: center;
+}
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://imgur.com/gBtyVD1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.welcome h1 {
+  color: #729C65;
+  text-shadow: 2px 2px #121212;
+  font-size: 8vw;
+}
+
+.instructions {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(116, 130, 95, 0.6);
+  align-items: center;
+  padding: 5vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.instructions p {
+  margin: 0 auto;
+  font-style: italic;
+}
+
+.imgPlaceholder {
+  background-image: url("https://imgur.com/6BTaZM2.jpg");
+  height: 60vh;
+}
+
+.about {
+  margin-top: 10px;
+  background-color: rgb(116, 130, 95, 0.6);
+  align-items: center;
+  padding: 5vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  font-size: 10px;
 }

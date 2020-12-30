@@ -25,12 +25,15 @@
     rel="stylesheet">
 </head>
 
-<body class="grid justifyCenter mxWidthLg">
+<body class="justifyCenter mxWidthLg">
   <header class="mxWidthLg minWidthFull widthFull">
     <nav class="flex justifySpaceBetween">
+      <div class="headerTitle">
       <a href="/" class="mxWidthSm">
         <img src="/images/happyTape.svg" alt="a smiling audio cassette" class="thumbnail">
       </a>
+      <h5 class="display">The Green Room</h5>
+    </div>
       <ul class="flex justifySpaceBetween minWidthFifty noListDiscs">
         <% if (!currentUser) { %>
         <li><a href="/auth/signup">Sign Up</a></li>
@@ -44,11 +47,18 @@
       </ul>
     </nav>
   </header>
+  <div class="grid">
   <%- include('partials/alerts') %>
   <% if (!currentUser) { %>
-  <h1 class="display marginMed">The Green Room</h1>
+  <!-- <h1 class="display marginMed">The Green Room</h1> -->
   <% } %>
   <%- body %>
+</div>
+
+<footer>
+  <p>Powered by: <a href="https://www.discogs.com/">Discogs</a></p>
+</footer>
+
 </body>
 
 </html>
