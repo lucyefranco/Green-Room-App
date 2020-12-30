@@ -36,11 +36,11 @@
     </div>
       <ul class="flex justifySpaceBetween minWidthFifty noListDiscs">
         <% if (!currentUser) { %>
-        <li><a href="/auth/signup">Sign Up</a></li>
-        <li><a href="/auth/login">Login</a></li>
+        <li><a class="headerButtons" href="/auth/signup">Sign Up</a></li>
+        <li><a class="headerButtons" href="/auth/login">Login</a></li>
         <li><%- include('partials/search') %></li>
         <% } else { %>
-        <li><a href="/auth/logout">Logout</a></li>
+        <li><a class="headerButtons" href="/auth/logout">Logout</a></li>
         <li><a href="/favorites">Favorites</a></li>
         <li><%- include('partials/search') %></li>
         <% } %>
@@ -56,7 +56,7 @@
 </div>
 
 <footer>
-  <p>Powered by: <a href="https://www.discogs.com/">Discogs</a></p>
+  <p>Powered by: <a href="https://www.discogs.com/" target="_blank">Discogs</a></p>
 </footer>
 
 </body>
