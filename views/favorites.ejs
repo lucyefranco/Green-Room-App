@@ -11,12 +11,12 @@
     <div CLASS="flex justifyCenter">
       <form method="GET" action="/favorites/<%= favorites[i].masterId %>">
         <input hidden type="text" name="artwork" value="<%= favorites[i].artwork %>">
-        <button class="btn btn-primary" type="submit">See Details</button>
+        <button class="btn btn-light" type="submit">See Details</button>
       </form>
 
       <form method="POST" action="/favorites?_method=DELETE">
         <input hidden type="text" name="id" value="<%= favorites[i].id %>">
-        <button class="btn btnGrey" type="submit">Remove From Favorites</button>
+        <button class="btn btnGrey" type="submit">Remove</button>
       </form>
     </div>
   </section>
